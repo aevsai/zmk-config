@@ -16,10 +16,10 @@
 &lt { quick_tap_ms = <200>; };
 
 &mt {
-    quick_tap_ms = <500>;
+    quick_tap_ms = <300>;
     flavor = "tap-preferred";
-    tapping-term-ms = <500>;
-    quick-tap-ms = <500>;
+    tapping-term-ms = <300>;
+    quick-tap-ms = <300>;
 };
 
 / {
@@ -37,11 +37,11 @@
 
         default_layer {
             bindings = <
-         &kp MINUS       &kp N1            &kp N2          &kp N3        &kp N4              &kp N5       &kp N6           &kp N7          &kp N8     &kp N9      &kp N0    &kp EQUAL
-&kp TAB  &kp GRAVE       &kp Q             &kp W           &kp E         &kp R               &kp T        &kp Y            &kp U           &kp I      &kp O       &kp P     &kp LBKT       &mt RWIN RBKT
-         &kp LEFT_SHIFT  &mt LEFT_SHIFT A  &mt LEFT_ALT S  &mt LCTRL D   &mt LEFT_COMMAND F  &kp G        &kp H            &kp J           &kp K      &kp L       &kp SEMI  &mt RCTRL SQT
-         &kp LCTRL       &kp Z             &kp X           &kp C         &kp V               &kp B        &kp N            &kp M           &kp COMMA  &kp DOT     &kp FSLH  &mt RALT BSLH
-                                           &kp LALT        &kp LEFT_GUI  &mt LSHFT SPACE     &kp ENTER    &lt 2 LC(SPACE)  &mt RSHFT BSPC  &kp RCTRL  &kp ESCAPE
+         &kp MINUS       &kp N1            &kp N2          &kp N3        &kp N4              &kp N5       &kp N6           &kp N7           &kp N8       &kp N9           &kp N0                &kp EQUAL
+&kp TAB  &kp GRAVE       &kp Q             &kp W           &kp E         &kp R               &kp T        &kp Y            &kp U            &kp I        &kp O            &kp P                 &kp LBKT       &mt RWIN RBKT
+         &kp LEFT_SHIFT  &mt LEFT_SHIFT A  &mt LEFT_ALT S  &mt LCTRL D   &mt LEFT_COMMAND F  &kp G        &kp H            &mt RIGHT_GUI J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_SHIFT SEMI  &mt RCTRL SQT
+         &kp LCTRL       &kp Z             &kp X           &kp C         &kp V               &kp B        &kp N            &kp M            &kp COMMA    &kp DOT          &kp FSLH              &mt RALT BSLH
+                                           &kp LALT        &kp LEFT_GUI  &mt LSHFT SPACE     &kp ENTER    &lt 2 LC(SPACE)  &mt RSHFT BSPC   &kp RCTRL    &kp ESCAPE
             >;
         };
 
@@ -57,11 +57,11 @@
 
         raise_layer {
             bindings = <
-        &trans           &kp F1           &kp F2     &kp F3        &kp F4        &kp F5          &kp F6        &kp F7          &kp F8         &kp F9            &kp F10       &kp F11
-&trans  &kp KP_NUM       &kp KP_SLASH     &kp KP_N7  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp C_VOL_UP  &kp HOME        &kp PSCRN      &kp PG_UP         &kp SLCK      &kp CAPS         &kp F12
-        &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp LEFT      &kp DOWN_ARROW  &kp UP         &kp RIGHT         &kp INS       &mt RCTRL K_APP
-        &trans           &kp KP_N0        &kp KP_N1  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp C_VOL_DN  &kp END         &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp BACKSLASH
-                                          &trans     &trans        &trans        &trans          &trans        &trans          &trans         &trans
+        &trans           &kp F1           &kp F2            &kp F3        &kp F4        &kp F5          &kp F6        &kp F7          &kp F8         &kp F9            &kp F10       &kp F11
+&trans  &kp KP_NUM       &kp KP_SLASH     &kp C_NEXT        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp C_VOL_UP  &kp HOME        &kp PSCRN      &kp PG_UP         &kp SLCK      &kp CAPS         &kp F12
+        &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp C_PLAY_PAUSE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp LEFT      &kp DOWN_ARROW  &kp UP         &kp RIGHT         &kp INS       &mt RCTRL K_APP
+        &trans           &kp KP_N0        &kp C_PREV        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp C_VOL_DN  &kp END         &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp BACKSLASH
+                                          &trans            &trans        &trans        &trans          &trans        &trans          &trans         &trans
             >;
         };
 
